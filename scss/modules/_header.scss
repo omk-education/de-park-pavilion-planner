@@ -1,0 +1,18 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.header {
+    grid-row: 1 / 2;
+    
+    // .header__logo
+
+    &__logo {}
+
+    // .header__menu
+
+    &__menu {}
+
+    // .header__link
+
+    &__link {}
+}

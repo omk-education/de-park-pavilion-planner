@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+  gap: 10px;
+  place-items: center;
+  background-color: rgb(214.6460176991, 247.8539823009, 216.7477876106);
+}
+
+.header {
+  grid-row: 1/2;
+}
