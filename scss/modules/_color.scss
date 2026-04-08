@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+$primary: #000000;
+$secondary: #ffffff;
+$accent: #3fdd49;
+$error: #dd3f3f;
+
+@function light($color, $amount: 0) {
+    @return color.adjust($color, $lightness: $amount * 1%);
+}
+
+@function dark($color, $amount: 0) {
+    @return color.adjust($color, $lightness: $amount * -1%);
+}
