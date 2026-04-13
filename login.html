@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парковая беседка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            Парковая беседка
+        </a>
+        <nav aria-label="main" class="header__menu">
+            <a href="registration.html" class="header__link">
+                Зарегистрироваться
+            </a>
+            <a href="login.html" class="header__link header__link_active">
+                Войти
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h1 class="main__title">
+            Авторизация
+        </h1>
+
+        <form action="user.html" class="form" method="post">
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="login" class="form__label">Логин</label>
+                <input type="text" name="login" id="login" class="form__input" minlength="5" required>
+                <div class="form__error" hidden>Введите логин</div>
+            </div>
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="password" class="form__label">Пароль</label>
+                <input type="password" name="password" id="password" class="form__input" minlength="6" required
+                    autocomplete="on">
+                <div class="form__error" hidden>Введите пароль</div>
+            </div>
+
+            <button type="submit" class="form__button">Войти</button>
+
+            <a href="admin.html" class="form__button">
+                Войти как администратор
+            </a>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

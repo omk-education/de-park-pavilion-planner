@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парковая беседка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            Парковая беседка
+        </a>
+        <nav aria-label="main" class="header__menu">
+            <a href="user.html" class="header__link header__link_active">
+                User
+            </a>
+            <a href="index.html" class="header__link">
+                Выйти
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h1 class="main__title">
+            Бронирование беседки
+        </h1>
+
+        <form action="user.html" class="form" method="post">
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="date" class="form__label">Дата</label>
+                <input type="date" name="date" id="date" class="form__input" required>
+                <div class="form__error" hidden>Выберите дату</div>
+            </div>
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="time" class="form__label">Время</label>
+                <input type="time" name="time" id="time" class="form__input" required>
+                <div class="form__error" hidden>Выберите время</div>
+            </div>
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="quantity" class="form__label">Количество гостей </label>
+                <input type="number" name="quantity" id="quantity" class="form__input" required 
+                min="1" max="10"
+                    step="1" value="1">
+                <div class="form__error" hidden>Введите количество гостей</div>
+            </div>
+
+            <!-- label + input + error-->
+            <div class="form__row">
+                <label for="phone" class="form__label">Телефон для связи</label>
+                <input type="tel" name="phone" id="phone" class="form__input" required>
+                <div class="form__error" hidden>Введите телефон</div>
+            </div>
+
+            <button type="submit" class="form__button">
+                Забронировать
+            </button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

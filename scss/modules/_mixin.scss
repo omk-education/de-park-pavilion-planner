@@ -8,10 +8,31 @@
     // border: 1px solid $secondary;
     padding: 10px;
     border-radius: 5px;
+
     user-select: none;
+    font-size: 1rem;
+
+    text-align: center;
 
     &:hover {
         background-color: dark($accent, 20);
         color: $secondary;
+    }
+
+    &_active {
+        background-color: dark($accent, 20);
+        color: $secondary;
+    }
+}
+
+@mixin input {
+    outline: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $secondary;
+
+    &:hover {
+        border-color: $accent;
     }
 }
