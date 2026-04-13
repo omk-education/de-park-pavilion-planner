@@ -1,0 +1,17 @@
+@use 'color' as *;
+
+@mixin button {
+    text-decoration: none;
+
+    background-color: $secondary;
+    color: dark($accent, 20);
+    // border: 1px solid $secondary;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+
+    &:hover {
+        background-color: dark($accent, 20);
+        color: $secondary;
+    }
+}

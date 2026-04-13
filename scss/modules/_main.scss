@@ -1,24 +1,29 @@
 @use 'color' as *;
 @use 'mixin' as *;
 
-.header {
-    grid-row: 1 / 2;
-    
+.main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 20px;
-    // .header__logo
+    place-items: center;
 
-    &__logo {
-        text-decoration: none;
+    // .main__ad
+    &__ad {
+        display: grid;
+        place-items: center;
+    }
+
+    // .main__title
+    &__title {
         color: dark($accent, 20);
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
-    // .header__menu
+    // .main__image
+    &__image {
+        user-select: none;
+    }
 
+    // .main__menu
     &__menu {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
@@ -26,8 +31,7 @@
         gap: 10px;
     }
 
-    // .header__link
-
+    // .main__link
     &__link {
         @include button;
     }
