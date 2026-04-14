@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парковая беседка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            Парковая беседка
+        </a>
+        <nav aria-label="main" class="header__menu">
+            <a href="user.html" class="header__link header__link_active">
+                User
+            </a>
+            <a href="index.html" class="header__link">
+                Выйти
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__card card">
+
+            <div class="card__filter">
+                <form action="#"> Фильтр
+                    <select name="filter" id="filter" class="form__input">
+                        <option>Новое</option>
+                        <option>Отменено</option>
+                        <option>Мероприятие прошло успешно</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="card__items">
+
+                <div class="card__item">
+                    <div class="card__status card__status_new">
+                        Новое
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Заявка #1</p>
+                        <p class="card__data">Создано 13-04-2026</p>
+                    </div>
+
+
+                    <div class="card__text">
+                        <p class="card__label">Дата и время</p>
+                        <p class="card__data">14-04-2026 13-05</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Количество гостей</p>
+                        <p class="card__data">8 человек</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Телефон</p>
+                        <p class="card__data">+7-(777)-777-77-77</p>
+                    </div>
+                    <div class="card__row" hidden>
+                        <button type="button" class="card__button card__button_complete">
+                            Завершить
+                        </button>
+                        <button type="button" class="card__button card__button_cancel">
+                            Отменить
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__status card__status_complete">
+                        Мероприятие прошло успешно
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Заявка #2</p>
+                        <p class="card__data">Создано 13-04-2026</p>
+                    </div>
+
+
+                    <div class="card__text">
+                        <p class="card__label">Дата и время</p>
+                        <p class="card__data">14-04-2026 13-05</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Количество гостей</p>
+                        <p class="card__data">8 человек</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Телефон</p>
+                        <p class="card__data">+7-(888)-777-88-77</p>
+                    </div>
+
+                    <div class="card__row">
+                        <form>
+                            <div class="form__row">
+                                <label for="form__label">Отзыв</label>
+                                <textarea name="feedback" id="feedback" class="form__input"></textarea>
+                            </div>
+                            <button type="submit" class="form__button card__button_complete">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="card__item">
+                    <div class="card__status card__status_cancel">
+                        Отменено
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Заявка #3</p>
+                        <p class="card__data">Создано 01-04-2026</p>
+                    </div>
+
+
+                    <div class="card__text">
+                        <p class="card__label">Дата и время</p>
+                        <p class="card__data">10-04-2026 13-05</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Количество гостей</p>
+                        <p class="card__data">3 человек</p>
+                    </div>
+                    <div class="card__text">
+                        <p class="card__label">Телефон</p>
+                        <p class="card__data">+7-(987)-123-45-67</p>
+                    </div>
+                    <div class="card__row" hidden>
+                        <button type="button" class="card__button">
+                            Завершить
+                        </button>
+                        <button type="button" class="card__button">
+                            Отменить
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
