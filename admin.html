@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Парковая беседка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -30,16 +31,17 @@
             <div class="card__filter">
                 <form action="#"> Фильтр
                     <select name="filter" id="filter" class="form__input">
-                        <option>Новое</option>
-                        <option>Отменено</option>
-                        <option>Мероприятие прошло успешно</option>
+                        <option value="all">Все заявки</option>
+                        <option value="new">Новое</option>
+                        <option value="cancel">Отменено</option>
+                        <option value="complete">Мероприятие прошло успешно</option>
                     </select>
                 </form>
             </div>
 
             <div class="card__items">
 
-                <div class="card__item">
+                <div class="card__item" data-status="new">
                     <div class="card__status card__status_new">
                         Новое
                     </div>
@@ -74,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="card__item">
+                <div class="card__item" data-status="complete">
                     <div class="card__status card__status_complete">
                         Мероприятие прошло успешно
                     </div>
@@ -109,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="card__item">
+                <div class="card__item" data-status="cancel">
                     <div class="card__status card__status_cancel">
                         Отменено
                     </div>
