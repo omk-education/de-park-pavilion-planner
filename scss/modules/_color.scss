@@ -5,6 +5,10 @@ $secondary: #ffffff;
 $accent: #3fdd49;
 $error: #dd3f3f;
 
+$new: #3f51dd;
+$cancel: #dd3f3f;
+$complete: #028500;
+
 @function light($color, $amount: 0) {
     @return color.adjust($color, $lightness: $amount * 1%);
 }

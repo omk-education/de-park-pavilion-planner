@@ -56,6 +56,24 @@ body {
   background-color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
   color: #ffffff;
 }
+.header__link_cancel {
+  color: #dd3f3f;
+  background-color: #ffffff;
+  border: 1px solid #dd3f3f;
+}
+.header__link_cancel:hover {
+  background-color: #dd3f3f;
+  color: #ffffff;
+}
+.header__link_complete {
+  color: #028500;
+  background-color: #ffffff;
+  border: 1px solid #028500;
+}
+.header__link_complete:hover {
+  background-color: #028500;
+  color: #ffffff;
+}
 
 .main {
   display: grid;
@@ -98,7 +116,24 @@ body {
   background-color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
   color: #ffffff;
 }
-
+.main__link_cancel {
+  color: #dd3f3f;
+  background-color: #ffffff;
+  border: 1px solid #dd3f3f;
+}
+.main__link_cancel:hover {
+  background-color: #dd3f3f;
+  color: #ffffff;
+}
+.main__link_complete {
+  color: #028500;
+  background-color: #ffffff;
+  border: 1px solid #028500;
+}
+.main__link_complete:hover {
+  background-color: #028500;
+  color: #ffffff;
+}
 .form {
   display: grid;
   gap: 20px;
@@ -143,5 +178,110 @@ body {
 }
 .form__button_active {
   background-color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
+  color: #ffffff;
+}
+.form__button_cancel {
+  color: #dd3f3f;
+  background-color: #ffffff;
+  border: 1px solid #dd3f3f;
+}
+.form__button_cancel:hover {
+  background-color: #dd3f3f;
+  color: #ffffff;
+}
+.form__button_complete {
+  color: #028500;
+  background-color: #ffffff;
+  border: 1px solid #028500;
+}
+.form__button_complete:hover {
+  background-color: #028500;
+  color: #ffffff;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  gap: 10px;
+  width: 100vw;
+}
+.card__filter {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card__items {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100vw;
+  padding: 20px;
+}
+.card__item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  gap: 10px;
+}
+.card__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card__data {
+  font-weight: bold;
+}
+.card__status {
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  justify-self: end;
+  font-size: 0.8rem;
+}
+.card__status_new {
+  background-color: #3f51dd;
+}
+.card__status_cancel {
+  background-color: #dd3f3f;
+}
+.card__status_complete {
+  background-color: #028500;
+}
+.card__button {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
+  padding: 10px;
+  border-radius: 5px;
+  user-select: none;
+  font-size: 1rem;
+  text-align: center;
+}
+.card__button:hover {
+  background-color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
+  color: #ffffff;
+}
+.card__button_active {
+  background-color: rgb(27.3805309735, 154.6194690265, 35.4336283186);
+  color: #ffffff;
+}
+.card__button_cancel {
+  color: #dd3f3f;
+  background-color: #ffffff;
+  border: 1px solid #dd3f3f;
+}
+.card__button_cancel:hover {
+  background-color: #dd3f3f;
+  color: #ffffff;
+}
+.card__button_complete {
+  color: #028500;
+  background-color: #ffffff;
+  border: 1px solid #028500;
+}
+.card__button_complete:hover {
+  background-color: #028500;
   color: #ffffff;
 }

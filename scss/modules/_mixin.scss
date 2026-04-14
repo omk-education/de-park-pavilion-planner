@@ -23,6 +23,28 @@
         background-color: dark($accent, 20);
         color: $secondary;
     }
+
+    &_cancel {
+        color: $cancel;
+        background-color: $secondary;
+        border: 1px solid $cancel;
+
+        &:hover {
+            background-color: $cancel;
+            color: $secondary;
+        }
+    }
+
+    &_complete {
+        color: $complete;
+        background-color: $secondary;
+        border: 1px solid $complete;
+
+        &:hover {
+            background-color: $complete;
+            color: $secondary;
+        }
+    }
 }
 
 @mixin input {

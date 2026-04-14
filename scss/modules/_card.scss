@@ -1,0 +1,82 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.card {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    gap: 10px;
+    width: 100vw;
+
+    // .card__filter
+    &__filter {
+        background-color: $secondary;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    // .card__items
+    &__items {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        width: 100vw;
+        padding: 20px;
+    }
+
+    // .card__item
+    &__item {
+        background-color: $secondary;
+        padding: 20px;
+        border-radius: 10px;
+
+        display: grid;
+        gap: 10px;
+    }
+
+    // .card__text
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // .card__label
+    &__label {}
+
+    // .card__data
+    &__data {
+        font-weight: bold;
+    }
+
+    // .card__status
+    &__status {
+        color: $secondary;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-align: center;
+        justify-self: end;
+        font-size: 0.8rem;
+
+        &_new {
+            background-color: $new;
+        }
+
+        &_cancel {
+            background-color: $cancel;
+        }
+
+        &_complete {
+            background-color: $complete;
+        }
+    }
+
+    // .card__row
+    &__row {
+
+    }
+
+    // .card__button
+    &__button {
+        @include button;
+    }
+}
